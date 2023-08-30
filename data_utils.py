@@ -58,24 +58,6 @@ class RawDataProcess(object):
         column_names = list(df.columns)
         for name in column_names:
             processed_df[name] = df[name].rolling(10).mean()
-
-        # import pdb
-        # pdb.set_trace()
-        # processed_df = processed_df.dropna() 
-        # target_df = pd.DataFrame(processed_df['Open'], index=processed_df.index)
-        plt.figure(figsize=(30, 15))
-        # plt.plot(range(20), prediction[:20], color='red', label='prediction')
-        # plt.plot(range(20), real[:20], color='blue', label='real')
-        # plt.legend()
-        # plt.xlabel("time")
-        # plt.ylabel("value")
-        # plt.savefig(os.path.join('imgs/', saved_name+'_predict2.jpg'))
-        
-
-
-        # import sys
-        # sys.exit()
-        # get return
         processed_df = processed_df.pct_change()
         processed_df = processed_df.dropna()
         
