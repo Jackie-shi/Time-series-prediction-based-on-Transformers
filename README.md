@@ -6,7 +6,7 @@ The aim of this repo is to show how to build a Transformer model for structural 
 
 # 📊 Dataset
 
-The dataset used in this task is [Nasdaq-traded historical dataset](https://www.kaggle.com/datasets/jacksoncrow/stock-market-dataset?datasetId=541298). In this dataset, there are tow directories named `etfs` and `stocks` respectively. Within each of both directories, there are thousands of `csv` format files representing different companies stock or etf data. \
+The dataset used in this task is [Nasdaq-traded historical dataset](https://www.kaggle.com/datasets/jacksoncrow/stock-market-dataset?datasetId=541298). In this dataset, there are tow directories named `etfs` and `stocks` respectively. Within each of both directories, there are thousands of `csv` format files representing different companies stock or etf data. 
 
 In each file, there are several features:
 
@@ -17,10 +17,6 @@ In each file, there are several features:
 - Close - close price adjusted for splits
 - Adj Close - adjusted close price adjusted for both dividends and splits.
 - Volume - the number of shares that changed hands during a given day
-
-Here take NAV.csv as example: 
-
-<img src="imgs/data_example.jpg" alt="NAV data piece">
 
 # 🧠 Model
 
