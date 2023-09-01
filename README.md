@@ -25,3 +25,7 @@ According to this [article](https://arxiv.org/abs/1706.03762), Transformer is co
 <img src="imgs/transformer.jpg" alt="transformer model">
 
 # 👀 How I do?
+
+- `data_utils.py`: for each file data, I calculate the MA(Moving Average) and rate of return. Meanwhile, I use sliding window to extract model input and output.
+- `model.py`: Transformers model always needs two inputs and one outputs data during training step. Encoder input and Decoder input are two inputs, Decoder output is the output. I don't use positional embedding insead of Time embedding according to this [article](https://arxiv.org/abs/1907.05321).
+- `train.py`: train the model.
